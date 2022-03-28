@@ -6,6 +6,8 @@
 "> __Color: {El color del vehículo}, {Velocidad} Km/h, {Cantidad de ruedas} ruedas, {Cilindraje} cc\".__"
 
 
+
+
 "********************************************************************************************************"
 class vehiculos():
     "Metodos"
@@ -39,7 +41,7 @@ class camioneta(vehiculos):
         return f"Color:{self.color}\n"\
                f"Ruedas: {self.ruedas} km/h\n"\
                f"Carga:{self.carga}kg\n"
-
+"********************************************************************************************************"
 
 
 
