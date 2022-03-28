@@ -1,11 +1,4 @@
-"### Crea una clase llamada _Rectangulo_ con dos puntos (inicial y final) que formarán la diagonal del rectángulo.\n",
-"+ Añade un método constructor para crear ambos puntos fácilmente, si no se envían se crearán dos puntos en el origen por defecto.\n",
-"+ Añade al rectángulo un método llamado Mostrar_base que muestre la base.\n",
-"+ Añade al rectángulo un método llamado Mostrar_altura que muestre la altura.\n",
-"+ Añade al rectángulo un método llamado Mostrar_area que muestre el area."
-
-
-class rectangulo():
-    def __init__(self,puntoInicial=None,puntoFinal=None):
-        self.puntoIncial=puntoInicial   
-
+" 1) Crea una superclase llamada Vehículo cuyos atributos sean Color y Ruedas. Redefine el método _str_ para que devuelva por pantalla:\n"
+"> __Color: {El color del vehículo}, {Cantidad de ruedas} ruedas__. \n"
+"### Crea una subclase llamada Carro y agrega los atributos Velocidad, Cilindraje. Redefine el método _str_ para que devuelva por pantalla \n"
+"> __Color: {El color del vehículo}, {Velocidad} Km/h, {Cantidad de ruedas} ruedas, {Cilindraje} cc\".__"
