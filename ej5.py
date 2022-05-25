@@ -9,13 +9,20 @@ e. Sume por alcance_nombre los valores de los años 2009 al 2019
 f. Muestre un gráfico de la actividad_producto_nombre en la provincia de Mendoza del año 2015 al 2019 """
 
 
+from operator import index
 from os import sep
 import pandas as pd
 
 def get_list(lista): #Obtiene un archivo csv w
-    df=pd.read_csv(lista,index_col=0,sep=',',)#sep=',',index_col=0
-    stadistics=pd.DataFrame([df])#Lo devuelve como data Frame
+    df=pd.read_csv(lista,sep=',',header=0)#sep=',',index_col=0
+    stadistics=pd.DataFrame(df)#Lo devuelve como data Frame
     return stadistics
 
 datos=get_list("comercio.csv")
-print(datos)    
+#dimensiones_Data_frame = datos.axes()  
+
+#print(datos)
+#datos=datos.reset_index()#Agrega el index en la fila para que no tome el id
+print("los ejes son: ",datos.axes)
+print("las dimensiones son: ",datos.ndim)
+print("ultimos 10 datos",datos[10:])
